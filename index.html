@@ -1212,7 +1212,7 @@
 
     // ===== HELPERS =====
     function escapeHtml(str) {
-      return str.replace(/[&<>"']/g, c => ({ '&': '&', '<': '<', '>': '>', '"': '"', "'": ''' }[c]));
+      return str.replace(/[&<>"']/g, c => ({ '&': '&', '<': '<', '>': '>', '"': '"', "'": "'" }[c]));
     }
 
     function formatDate(dateStr) {
